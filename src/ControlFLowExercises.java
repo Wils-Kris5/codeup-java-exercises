@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 
 public class ControlFLowExercises {
     public static void main(String[] args) {
@@ -13,7 +13,7 @@ public class ControlFLowExercises {
 //1
 //        int i = 5;
 //        while(i <= 15){
-//            System.out.printF("%s%s,i," ");
+//            System.out.printf("%s%s",i, " ");
 //            i++;
 //        }
 
@@ -33,7 +33,7 @@ public class ControlFLowExercises {
 //           do {
 //               System.out.println(i);
 //               i+=2;
-//           } while (i < 100 );
+//           } while (i < 100);
 
 //b
 //           int i = 100;
@@ -61,7 +61,7 @@ public class ControlFLowExercises {
 
         //For
         // Refactor the previous two exercises to use a for loop instead.
- //for-b
+    // for-b
 //        int i;
 //        for (int i = 100; i >= 0; i -= 5) {
 //            System.out.println(i);
@@ -85,31 +85,18 @@ public class ControlFLowExercises {
 
 
         int i = 1;
-        while(i < 100){
-            System.out.println("FizzBuzz");
-            System.out.println("Fizz");
-            System.out.println("Buzz");
-            i++;
-        }
-            if(i % 3 == 0 & i % 5 == 0) {
+        while(i <= 100){
+          if(i % 3 == 0 && i % 5 == 0){
                 System.out.println("FizzBuzz");
-            }
-
-            if(i % 3 == 0){
-                System.out.println("Fizz");
-                 }
-            if(i % 5 == 0) {
+            } else if(i % 3 == 0){
+              System.out.println("Fizz");
+          } else if(i % 5 == 0) {
             System.out.println("Buzz");
-        }
-
-
-
-
-
-
-
-
-
+        }  else {
+              System.out.println(i);
+          }
+          i++;
+   }
 
        
         //Display a table of powers.
@@ -121,8 +108,24 @@ public class ControlFLowExercises {
         //Only continue if the user agrees to.
         //Example Output
         //
+      Scanner scanner = new Scanner(System.in);
+        System.out.print("What number would you like to go up to? ");
+          int userInput = scanner.nextInt();
+        System.out.println("");
+        System.out.println("Here is your table!");
+        
 
-
+//        What number would you like to go up to? 5
+//
+//        Here is your table!
+//
+//                number | squared | cubed
+//                ------ | ------- | -----
+//                1      | 1       | 1
+//        2      | 4       | 8
+//        3      | 9       | 27
+//        4      | 16      | 64
+//        5      | 25      | 125
 
         //What number would you like to go up to? 5
         //
