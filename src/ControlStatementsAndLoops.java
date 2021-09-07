@@ -128,6 +128,8 @@ public class ControlStatementsAndLoops {
 //}
         //  Logical Operators
  /* ShortCircut
+ the double symbol one is the shortcircut operator and both must be true
+
  int c = 0, d = 100, e = 50;
    if( c == 0 && e++ < 100 ) this first code block will only operate       nt:  if( c == 0 &|& e++ < 100 ) this first code block will only operate
                                   if the first statement is true                 left side  |  right side
@@ -148,7 +150,7 @@ public class ControlStatementsAndLoops {
    if( c == 1 || e++ < 100 )
 
     int c = 0, d = 100, e = 50;
-   if( c == 1 | e++ < 100 )
+   if( c == 1 | e++ < 100 )    with a single one it  
 
 
  there is no === operator, only ==
@@ -190,24 +192,25 @@ public class ControlStatementsAndLoops {
 //            System.out.println("Now I'm in the loop. i has not incrementede yet and its value is " + i);
 //        }
 //        System.out.println("This is out the far end of the loop. The conditional has tested false. The value of i is what it last incremented to. See?" + i);
-        int numberOfCansOfBigRedOnTheWall = 99;
-        String word = "cans";
-        while (numberOfCansOfBigRedOnTheWall > 0) {
-        }
-        System.out.println(numberOfCansOfBigRedOnTheWall + " " + word + "Number of cans on of Big Red on the wall");
-        System.out.println(numberOfCansOfBigRedOnTheWall + " " + word + "Number of cans of Oig Red");
-        System.out.println("Take one down pass it around");
-        numberOfCansOfBigRedOnTheWall--;
-        if (numberOfCansOfBigRedOnTheWall == 1) {
-            word = "can";
-        }
-        if (numberOfCansOfBigRedOnTheWall == 0) {
-            System.out.println(numberOfCansOfBigRedOnTheWall + " " + word + "of Big Red on the wall");
-        }
+
+
+//        int numberOfCansOfBigRedOnTheWall = 99;
+//        String word = "cans";
+//        while (numberOfCansOfBigRedOnTheWall > 0) {
+//        }
+//        System.out.println(numberOfCansOfBigRedOnTheWall + " " + word + "Number of cans on of Big Red on the wall");
+//        System.out.println(numberOfCansOfBigRedOnTheWall + " " + word + "Number of cans of Oig Red");
+//        System.out.println("Take one down pass it around");
+//        numberOfCansOfBigRedOnTheWall--;
+//        if (numberOfCansOfBigRedOnTheWall == 1) {
+//            word = "can";
+//        }
+//        if (numberOfCansOfBigRedOnTheWall == 0) {
+//            System.out.println(numberOfCansOfBigRedOnTheWall + " " + word + "of Big Red on the wall");
+//        }
 
     }
 
 
 
     }
-
