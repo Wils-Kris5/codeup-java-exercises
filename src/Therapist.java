@@ -4,7 +4,7 @@ public class Therapist {
 
         String askMe = "how are you?";
 
-        String iSay = "I'm doing fine how are you?"
+        String iSay = "I'm doing fine how are you?";
 
 
 
