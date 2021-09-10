@@ -98,7 +98,7 @@ public class MethodLecture {
 
     // same method name just different data types
      /*
-      PARSING IS HOW YOU CONVERT A NUMERIC STRING TO A STRING!!!!! STOP FORGETTING THAT
+      PARSING IS HOW YOU CONVERT A NUMERIC STRING TO A NUMBER!!!!! STOP FORGETTING THAT
 
     //>>command b is how you look at the  source code
 
@@ -150,22 +150,31 @@ public class MethodLecture {
 //        Recursion allows programmers to express certain algorithms in a simpler way. Recursive solutions can
 //        be less efficient and possibly throw an exception if there are too many recursive calls.
 //     */
-//
-//        public static long powersOfTen ( int n){
-//            if (n == 0) return 1;
-//            if (n == 1) return 10;
-//            return powersOfTen(n - 1) * 10;
-//        }
-//
-//        public static void countTo100Loop ( int num){
-//            for (int i = num; i <= 100; i += 1) {
-//                System.out.println(i);
-//            }
-//        }
+
+
+    public static long powersOfTen(int n) {
+        if (n == 0) return 1;
+        if (n == 1) return 10;
+        return powersOfTen(n - 1) * 10;
+    }
+
+    public static void countTo100Loop(int num) {
+        for (int i = num; i <= 100; i += 1) {
+            System.out.println(i);
+        }
+    }
+}
 
         // TODO: use recursion to print out a given number up through 100
-        // public static int countTo100(int num) {
-        // }
+
+
+//         public static int countTo100(int num) {
+//             System.out.println(num);
+//             if(num == 100){
+//                 return
+//             }
+//             countTo100(num);
+//         }
 
 
         // TODO: use recursion to add all numbers up from 1 to a given number
@@ -183,6 +192,16 @@ public class MethodLecture {
         //     countTo100Loop(4);
         //
         // }
-
-
-    }
+    
+//     public static void ohNo(int num) {
+//         ++num;
+//         if (num == 1000){
+//             return;
+//         }
+//         System.out.println("Oh no");
+//         ohNo(num);
+//     }
+//         public static void main(String[] args) {
+//         ohNo(1);
+//         }
+//    }
