@@ -1,5 +1,6 @@
 public class favAnimal {
-    private String name;
+    public String name;
+    
 
     String sound;
     int foodCount;
