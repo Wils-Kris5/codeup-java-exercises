@@ -161,7 +161,20 @@ public class ArraysLecture {
 
         // using a method that take in an array as an argument
         // Person.printOutAgesOfPeople(people);
+        // Person.progressOneYear(people);
+        // Person.printOutAgesOfPeople(people);
 
+
+        // User
+        // BlogPostExample
+
+               //String content
+               // Comments[] comments
+
+                 // User
+                   // firstName
+                   // email
+                   // username
 
         /* TODO: create a class called Product with two private properties of name and priceInCents.
             Add a public static method called, find average price that takes in an array of products
