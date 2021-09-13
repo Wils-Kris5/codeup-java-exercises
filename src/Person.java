@@ -28,7 +28,9 @@ public class Person {
 //            kris.firstName = "Kris";
 //            kris.lastName = "Wilson";
             System.out.println(kris.sayHello());
+            // prints Kris says hello!
 //            // prints "Hello from Kris Wilson!"
+           
         }
     }
 
