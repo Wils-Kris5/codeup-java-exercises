@@ -31,8 +31,8 @@ public class Product {
   public static void main(String[] args) {
 
      Product AProduct = new Product();
-     AProduct.name("default");
-   
+     AProduct.name = "default";
+      AProduct.PriceInCents = 2.2;
 
     }
 }
