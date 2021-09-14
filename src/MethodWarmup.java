@@ -21,7 +21,9 @@ public class MethodWarmup {
 //
 //        }
 //    }
-    
+
+
+
 }
 /*TODO: create a class, MethodWarmup, and add an empty main method.
       TODO: create a method, getDifference, that takes in two integers and returns the difference between the higher integer and the lower integer (subtract).

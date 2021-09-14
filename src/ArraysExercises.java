@@ -1,10 +1,10 @@
 
 
 public class ArraysExercises {
-    public static Person[] addPerson(Person[] personArr, Person personToAdd) {
-        Person Arrays.copyOf(personArr, length)
-          return
-    }
+//    public static Person[] addPerson(Person[] personArr, Person personToAdd) {
+//        Person Arrays.copyOf(personArr, length)
+//          return
+//    }
     public static void main(String[] args) {
   /*
  What happens when you run the following code? Why is Arrays.toString necessary?
