@@ -4,6 +4,7 @@ public class Vehicle {
 
     private String name;
 
+
     public String getName() {
        return name;
     }
@@ -13,7 +14,17 @@ public class Vehicle {
     }
 
    public void makeNoise() {
-       System.out.println("Vroom vroom");
+       System.out.println(name + " goes Vroom vroom");
    }
 
-}
+ public Vehicle(){}
+
+
+
+
+
+
+
+   }
+
+

@@ -13,6 +13,20 @@ public class BirdTest {
             System.out.println(mallard.getName() + " says:");
                mallard.makeNoise();
                mallard.move();
+
+            Parakeet budgerigar = new Parakeet();
+            budgerigar.setName("Budgerigar");
+            System.out.println(mallard.getName() + " says:");
+            budgerigar.makeNoise();
+            budgerigar.move();
+
+            Penguin gunthur = new Penguin();
+            gunthur.setName("Gunthur");
+            System.out.println(gunthur.getName() + " says");
+            gunthur.makeNoise();
+            gunthur.move();
+
+
         }
     }
 
