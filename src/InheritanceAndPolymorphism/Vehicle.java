@@ -1,30 +1,38 @@
 package InheritanceAndPolymorphism;
 
 public class Vehicle {
-
     private String name;
+
+    public Vehicle(String name) {
+
+    }
+
+    public Vehicle() {
+    }
 
 
     public String getName() {
-       return name;
+
+        return name;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
    public void makeNoise() {
        System.out.println(name + " goes Vroom vroom");
-   }
-
- public Vehicle(){}
-
-
-
-
-
-
 
    }
+
+
+// public Vehicle(String name){
+//
+//
+// }
+ 
+
+}
 
 

@@ -7,4 +7,8 @@ public class BirdShelter {
             bird.makeNoise();
         }
     }
+    public void  hospitalizedShelterBirds(Bird birdPatient){
+        //just changed the name of the method for easier understanding and context
+        birdPatient.makeNoise();
+    }
 }

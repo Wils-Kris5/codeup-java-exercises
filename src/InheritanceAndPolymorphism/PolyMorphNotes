@@ -1,0 +1,12 @@
+Polymorphism
+Polymorphism is a feature of inheritance
+it allows us to treat objects of different subclasses that have the same superclass
+   as if they were of the superclass type. 
+ polyMorphic argument = superclass
+ you can declare any of the subclasses
+
+
+ sidenote: packages are classes that do related things, its to organize code 
+
+
+

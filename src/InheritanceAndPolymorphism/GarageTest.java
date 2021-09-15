@@ -21,7 +21,7 @@ public class GarageTest {
 
            Garage garage = new Garage();
           garage.vehicles = vehiclesInTheGarage;
-
+   // the customersVehicle is refrencing the customersVehicle in the main method in order to sout out the vehicle name rather than the reference ID
         Vehicle customersVehicle = garage.findVehicle("Honda" , vehiclesInTheGarage);
         System.out.println(customersVehicle.getName());
         Vehicle customersVehicle2 = garage.findVehicle("Tractor Pun" , vehiclesInTheGarage);
