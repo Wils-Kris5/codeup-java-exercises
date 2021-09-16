@@ -1,6 +1,11 @@
 package shapes;
 
 public class Rectangle {
+    //protected properties for both length and width.
+    protected int length;
+    protected int width;
+
+
 
 
     public int getLength() {
@@ -19,28 +24,28 @@ public class Rectangle {
         this.width = width;
     }
 
-    //protected properties for both length and width.
-    protected int length;
-    protected int width;
+
 
     public Rectangle() {
-
+       //The default method for rectangle
     }
 
 
     public Rectangle(int intLength, int intWidth) {
-        int length = intLength;
-        int width = intWidth;
+       this.length = intLength;
+        this.width = intWidth;
 
     }
 
     public int getPerimeter() {
-
-        return 2 * intLength + 2 * intWidth;
+        // you have to sout before returning so this it knows the vaule needs to be printed first to return it for display
+        System.out.println("getPerimeter method for rectangle");
+        return ((2 * this.length) + (2 * this.width));
     }
 
     public int getArea() {
         int area = (this.length) * (this.width);
+        System.out.println("getArea() method for rectangle");
         return area;
     }
 

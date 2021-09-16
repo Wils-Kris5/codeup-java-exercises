@@ -10,7 +10,9 @@ public class ShapesTest {
       System.out.println("Rectangle is " + box1.getArea());
 
       
-    // protected properties for both length and width.
+      Rectangle box2 = new Square(5);
+        System.out.println("Square is " + box2.getPerimeter());
+        System.out.println("Square is " + box2.getArea());
 
 
 
