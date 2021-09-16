@@ -28,5 +28,6 @@ public class GarageTest {
         System.out.println(customersVehicle2.getName());
         Vehicle customersVehicle3 = garage.findVehicle("Kris's Car" , vehiclesInTheGarage);
         System.out.println(customersVehicle3.getName());
+
     }
 }
