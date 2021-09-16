@@ -13,17 +13,21 @@ it allows us to treat objects of different subclasses that have the same supercl
   a class that serves the same functionality as a super class but cant be instatiated
   Abstract class = abstract methods
   abstract methods = no body // method name, return type, params is how you define a abstract method
+              no body = how the method is implemented
+
+   implements keyword = provide each method with implementation
+
+      IMPLEMENTATION           
 
  What is an interface:
      a type of abstract class.
      follows rules{ methods can be either public or static//properties are public and static final//no static methods
 
  What can an abstract class do that an interface can’t?
-     
-
+    can be defined by extending classes that inclue a class thats inherited and have multiple interfaces// can declare constructors
+        and destructors
  What can an interface do that an abstract class can’t?
      provides context data regarding  what the object does
-
 
  Does the idea of a bicycle match more closely with an abstract class or interface?
 
