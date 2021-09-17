@@ -7,8 +7,13 @@ public class Waiter extends Employee implements Transferable {
     public String doWork() {
         return "Serving the guests...";
     }
+    @Override
     public void syncUp(){
-        System.out.println();
+        System.out.println("talk with manager");
+    }
+     @Override
+    public void escalateQuestion(){
+        System.out.println("flag down manager to ask question");
     }
     @Override
     public void transferToNewLocation(String location) {

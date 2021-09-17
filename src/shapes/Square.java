@@ -10,12 +10,15 @@ public class Square extends Rectangle {
         super(side, side);
         this.side = side;
     }
-    public int getArea(int side) {
-        System.out.println("Square getArea() method");
-       return side * side;
+    @Override
+    public int getArea() {
+         int squareArea = (side * side);
+        System.out.println("Square Area = " + squareArea);
+       return squareArea;
     }
       public int getPerimeter(){
-          System.out.println("Square getPerimeter() method");
-        return 4 * side;
+        int squarePerimeter = (4 * side);
+          System.out.println("Square Perimeter = " + squarePerimeter);
+          return squarePerimeter;
       }
 }

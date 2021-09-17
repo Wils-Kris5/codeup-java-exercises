@@ -1,10 +1,9 @@
 package shapes;
 
-public class Rectangle {
-    //protected properties for both length and width.
+public class Rectangle extends Quadrilateral implements Measurable {
+   // protected properties for both length and width.
     protected int length;
     protected int width;
-
 
 
 
@@ -26,11 +25,6 @@ public class Rectangle {
 
 
 
-    public Rectangle() {
-       //The default method for rectangle
-    }
-
-
     public Rectangle(int intLength, int intWidth) {
        this.length = intLength;
         this.width = intWidth;
@@ -38,14 +32,15 @@ public class Rectangle {
     }
 
     public int getPerimeter() {
+        int perimeter = ((2 * this.length) + (2 * this.width));
         // you have to sout before returning so this it knows the vaule needs to be printed first to return it for display
-        System.out.println("getPerimeter method for rectangle");
-        return ((2 * this.length) + (2 * this.width));
+        System.out.println("Rectangle Perimeter = " + perimeter);
+          return perimeter;
     }
 
     public int getArea() {
         int area = (this.length) * (this.width);
-        System.out.println("getArea() method for rectangle");
+        System.out.println("Rectangle Area = " + area );
         return area;
     }
 
@@ -58,5 +53,5 @@ public class Rectangle {
 // The formulas for both follow
 
 
-    }
+ }
 
