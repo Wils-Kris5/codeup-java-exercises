@@ -1,6 +1,6 @@
 
 
-public class Employee {
+public class EmployeeLecture {
    public String name;
    public static String company = "Verdian Dynamics";
 

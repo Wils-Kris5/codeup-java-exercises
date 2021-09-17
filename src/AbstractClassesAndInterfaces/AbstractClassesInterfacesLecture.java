@@ -22,6 +22,7 @@ public class AbstractClassesInterfacesLecture {
     // What can an interface do that an abstract class can’t?
     //     provides context data regarding  what the object does
     //
+    //The short answer: An abstract class allows you to create functionality that subclasses can implement or override. An interface only allows you to define functionality, not implement it. And whereas a class can extend only one abstract class, it can take advantage of multiple interfaces.
     // Does the idea of a bicycle match more closely with an abstract class or interface?
     //
     //
@@ -42,7 +43,7 @@ public class AbstractClassesInterfacesLecture {
     //
     //Interface - an aspect of something that may be made a part of another class
     //implementing an interface is a "can do" or "can be" relationship
-    //
+    // > a class can have state(instance variables) but interfaces cannot
     //Building b = new Library();
     //
     //Abstract class examples: Building

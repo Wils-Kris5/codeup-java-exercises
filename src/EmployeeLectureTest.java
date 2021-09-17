@@ -1,14 +1,14 @@
 
 
-public class EmployeeTest {
+public class EmployeeLectureTest {
     public static void main(String[] args) {
 
 
-        Employee one = new Employee();
+        EmployeeLecture one = new EmployeeLecture();
         one.name = "one";
-        Employee two = new Employee();
+        EmployeeLecture two = new EmployeeLecture();
         two.name = "two";
-        Employee three = new Employee();
+        EmployeeLecture three = new EmployeeLecture();
         three.name = "three";
         one.displayEmployeeInfo();
         two.displayEmployeeInfo();
