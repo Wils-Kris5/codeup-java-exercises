@@ -16,7 +16,7 @@ public class Square extends Rectangle {
         System.out.println("Square Area = " + squareArea);
        return squareArea;
     }
-      public int getPerimeter(){
+      public double getPerimeter(){
         int squarePerimeter = (4 * side);
           System.out.println("Square Perimeter = " + squarePerimeter);
           return squarePerimeter;
