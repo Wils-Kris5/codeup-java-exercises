@@ -10,24 +10,26 @@ public class Square extends Quadrilateral {
         super(side, side);
         //this.side = side;
     }
-    @Override
+     @Override
     public double getArea() {
          double side = length;
-        System.out.println(" Area = " + getArea());
+
        return side * side;
     }
+    @Override
       public double getPerimeter(){
         double side =  length;
-              //  (4 * side);
 
-          System.out.println(" Perimeter = " + getPerimeter() );
           return 4 * side;
       }
+      @Override
       public void setWidth(double side){
         this.width = side;
         this.length = side;
       }
+      @Override
       public void setLength(double side){
+
         setWidth(side);
       }
 }
