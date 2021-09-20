@@ -47,7 +47,7 @@
          when we set up an inheritance structure it helps us avoid code repitition closley related classes that are similar to one another we can have them draw from one source
          We can define classes that extend, or inherit from another class with the extends keyword in the class definition. We call these subclasses, and the classes that are being inherited from / extended superclasses.
 
-     A subclass inherits all the fields of it's superclass, and can re-use any of it's functionality.
+     group.B.A subclass inherits all the fields of it's superclass, and can re-use any of it's functionality.
 
 
       Create a InheritanceAndPolymorphism.Vehicle class with two properties: a name instance variable and a makeNoise() method.

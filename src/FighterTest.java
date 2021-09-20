@@ -20,5 +20,5 @@
 //```
 //        Now, in this test class, we instantiate our fighter and we use dot notation to access its variables.
 //
-//        "A real Java application is nothing but objects talking to other objects. In this case, talking means objects calling methods on one another."
+//        "group.B.A real Java application is nothing but objects talking to other objects. In this case, talking means objects calling methods on one another."
 //                --Head First Java

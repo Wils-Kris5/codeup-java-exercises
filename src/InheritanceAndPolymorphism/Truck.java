@@ -29,7 +29,7 @@ public class Truck extends Vehicle {
 //    public Truck(String name){
 //            //   this.setName(name);
 //           super.setName(name);
-//            System.out.println("A new Tuck is made!");
+//            System.out.println("group.B.A new Tuck is made!");
 //        }
 //        // anything outside the class where name genisised from cannot be refrenced
 //

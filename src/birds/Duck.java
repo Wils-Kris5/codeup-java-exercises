@@ -18,7 +18,7 @@ public class Duck extends Bird {
  //this is referring to if you wanted to pass through ANY KIND of Duck
      //   this.setName(name);
         super(name);
-      System.out.println("A new Duck is made!");
+      System.out.println("group.B.A new Duck is made!");
   }
  // anything outside the class where name genisised from cannot be refrenced
  // if its within the same package you DONT HAVE TO set it to public because it will get that from the super

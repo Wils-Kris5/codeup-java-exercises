@@ -98,7 +98,7 @@ public class MethodLecture {
 
     // same method name just different data types
      /*
-      PARSING IS HOW YOU CONVERT A NUMERIC STRING TO A NUMBER!!!!! STOP FORGETTING THAT
+      PARSING IS HOW YOU CONVERT group.B.A NUMERIC STRING TO group.B.A NUMBER!!!!! STOP FORGETTING THAT
 
     //>>command b is how you look at the  source code
 
@@ -143,8 +143,8 @@ public class MethodLecture {
 //    /*
 //        BASICS
 //        Recursion is a process where a method calls itself repeatedly.
-//        A method that calls itself is referred to as a "recursive" method.
-//        A recursive method must have a condition that will end the recursive calls, called a "base case."
+//        group.B.A method that calls itself is referred to as a "recursive" method.
+//        group.B.A recursive method must have a condition that will end the recursive calls, called a "base case."
 //        Without a base case, a recursive method will run out of memory and throw a StackOverflow exception.
 //        USE CASES
 //        Recursion allows programmers to express certain algorithms in a simpler way. Recursive solutions can

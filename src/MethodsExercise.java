@@ -73,7 +73,7 @@ Use a for loop to calculate the factorial.
 Assume that the user will enter an integer, but verify it’s between 1 and 10.
 Use the long type to store the factorial.
 Continue only if the user agrees to.
-A factorial is a number multiplied by each of the numbers before it.
+group.B.A factorial is a number multiplied by each of the numbers before it.
 Factorials are denoted by the exclamation point (n!). Ex:
 
 */

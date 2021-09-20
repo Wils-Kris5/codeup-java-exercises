@@ -1,6 +1,6 @@
 /*# Object-Oriented Programming
 
-        We now enter the portion of our curriculum where we learn how Java is really used, that is, to construct objects that interact with one another. A real Java program is not really just a bunch of code running in one file, it's a bunch of separate classes that interact with one another.
+        We now enter the portion of our curriculum where we learn how Java is really used, that is, to construct objects that interact with one another. group.B.A real Java program is not really just a bunch of code running in one file, it's a bunch of separate classes that interact with one another.
 
         We want to start moving away from a concept of a program as a series of procedures, and towards a concept of a program as a set of objects. We think to ourselves: what are the things in this program? And what do these things do? What do these things know about themselves, or need to know about themselves in order to do the things they do?
 
@@ -10,7 +10,7 @@
 
         What we do now is create a class. The class is a blueprint for an object. Our class code tells the JVM how to make an object of that particular type.
 
-        A class, in turn, has two types of fields -- instance variables, and methods.  */
+        group.B.A class, in turn, has two types of fields -- instance variables, and methods.  */
 
 
 //public class Fighter {

@@ -3,7 +3,7 @@ package util;
 public class OOPLecture {
 //    # Object-Oriented Programming
 //
-//    We now enter the portion of our curriculum where we learn how Java is really used, that is, to construct objects that interact with one another. A real Java program is not really just a bunch of code running in one file, it's a bunch of separate classes that interact with one another.
+//    We now enter the portion of our curriculum where we learn how Java is really used, that is, to construct objects that interact with one another. group.B.A real Java program is not really just a bunch of code running in one file, it's a bunch of separate classes that interact with one another.
 //
 //    We want to start moving away from a concept of a program as a series of procedures, and towards a concept of a program as a set of objects. We think to ourselves: what are the things in this program? And what do these things do? What do these things know about themselves, or need to know about themselves in order to do the things they do?
 //
@@ -13,7 +13,7 @@ public class OOPLecture {
 //
 //    What we do now is create a class. The class is a blueprint for an object. Our class code tells the JVM how to make an object of that particular type.
 //
-//    A class, in turn, has two types of fields -- instance variables, and methods.
+//    group.B.A class, in turn, has two types of fields -- instance variables, and methods.
 //
 //```
 //    public class Fighter {
@@ -57,7 +57,7 @@ public class OOPLecture {
 //```
 //    Now, in this test class, we instantiate our fighter and we use dot notation to access its variables.
 //
-//"A real Java application is nothing but objects talking to other objects. In this case, talking means objects calling methods on one another."
+//"group.B.A real Java application is nothing but objects talking to other objects. In this case, talking means objects calling methods on one another."
 //        --Head First Java
 //
 //    It's important to understand the difference between a class and an object. Think of it like this. There's a contacts app. Every time you fire it up, it asks you if you want to create a new contact. When you say yes, it gives you a template with blank fields. At that point, you fill in the fields and that's when you have an actual contact. Until you fill in the fields, all you have is a blank contact template. Same here. The Fighter class is just an empty template. When I actually create a new fighter and fill in the variables, that's a fighter object. That's when the class has been instantiated and an object has come into existence.
@@ -94,7 +94,7 @@ public class OOPLecture {
 //
 //            ## static and instance
 //
-//    So far we have been creating all our methods simply declared with the keyword public, the return type, and the name of the method. These methods are accessible objects generated from their class definition. So, if I create a Fighter called Arata, Arata can do the battleroar. A monster cannot do the battleroar, only a Fighter.
+//    So far we have been creating all our methods simply declared with the keyword public, the return type, and the name of the method. These methods are accessible objects generated from their class definition. So, if I create a Fighter called Arata, Arata can do the battleroar. group.B.A monster cannot do the battleroar, only a Fighter.
 //
 //    But you can have static methods, and you can have static variables, and these are available to classes other than the ones they are defined in. Let's have a look. Say you want to have access to something from inside every class in your program. For example, a dice-roll that every kind of character and monster could have access to. We could start a little like this:
 //
@@ -196,7 +196,7 @@ public class OOPLecture {
 //
 //    What are we actually doing here? Let's break it down. First, we are declaring a new reference variable of a particular class type (Fighter arata or Employee rick). Second we are creating a new object. (new Fighter() or new Employee()). Finally we are assigning the new object to the reference (=, the assignment operator).
 //
-//    What exactly are these "Fighter()" and "Employee()" terms. They look like methods right? Actually they are constructors. You invoke a constructor with the keyword **new** followed by the name of a class. This language creates a new instance of that class -- an object. [A class is just code. It just sits there being the potential for objects. When you do new Object() you create an actual object, which is an instance of the class].
+//    What exactly are these "Fighter()" and "Employee()" terms. They look like methods right? Actually they are constructors. You invoke a constructor with the keyword **new** followed by the name of a class. This language creates a new instance of that class -- an object. [group.B.A class is just code. It just sits there being the potential for objects. When you do new Object() you create an actual object, which is an instance of the class].
 //
 //    At its most basic, a constructor looks like this:
 //
@@ -214,15 +214,15 @@ public class OOPLecture {
 //    Fighter.java:
 //            ```
 //    public Fighter(){
-//        System.out.println("A Fighter has come into being!");
+//        System.out.println("group.B.A Fighter has come into being!");
 //    }
 //```
 //    FighterTest.java output:
 //            ```
-//    A Fighter has come into being!
+//    group.B.A Fighter has come into being!
 //    Arata has 17 hit points and can do 14 damage
 //    I am Arata and I will destroy you!
-//    A Fighter has come into being!
+//    group.B.A Fighter has come into being!
 //    I am Sozalix and I will destroy you!
 //    Arata attacks and rolls a 11
 //            4
@@ -238,7 +238,7 @@ public class OOPLecture {
 //    Fighter.java:
 //            ```
 //    public Fighter(String name, int hitPoints, int maxDamage){
-//        System.out.println("A new Fighter has emerged!");
+//        System.out.println("group.B.A new Fighter has emerged!");
 //        this.name = name;
 //        this.hitPoints = hitPoints;
 //        this.maxDamage = maxDamage;
@@ -251,7 +251,7 @@ public class OOPLecture {
 //```
 //    Output:
 //            ```
-//    A new Fighter has emerged!
+//    group.B.A new Fighter has emerged!
 //    Arata has 17 hit points and can do 14 damage
 //```
 //        ### mini-exercise
@@ -280,7 +280,7 @@ public class OOPLecture {
 //```
 //    Output:
 //            ```
-//    A new Fighter has emerged!
+//    group.B.A new Fighter has emerged!
 //    Arata has 17 hit points and can do 14 damage
 //    Arata has 0 hit points and can do 14 damage
 //```
@@ -310,7 +310,7 @@ public class OOPLecture {
 //```
 //    Output:
 //            ```
-//    A new Fighter has emerged!
+//    group.B.A new Fighter has emerged!
 //    Arata has 17 hit points and can do 14 damage
 //```
 //

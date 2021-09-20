@@ -10,7 +10,7 @@ public abstract class Media {
 
 
 
- //Consider a library. In the library, there are various forms of media accessible to the public. A patron of a library can access
+ //Consider a library. In the library, there are various forms of media accessible to the public. group.B.A patron of a library can access
     //newspapers, books, microfiche, magazines, records, cds, etc.
 
 

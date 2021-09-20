@@ -27,7 +27,7 @@ public class Bird {
 
     public Bird(String name) {
         this.name = name;
-        System.out.println("A new bird has been made!");
+        System.out.println("group.B.A new bird has been made!");
         //creating a default constructor for a quick fix BUUUUT the method is wanting
 
     }

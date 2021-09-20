@@ -147,8 +147,8 @@ public class ControlFLowExercises {
         //The application should only continue if the user agrees to.
         //Grade Ranges:
         //
-        //A : 100 - 88
-        //B : 87 - 80
+        //group.B.A : 100 - 88
+        //group.B : 87 - 80
         //C : 79 - 67
         //D : 66 - 60
         //F : 59 - 0
