@@ -5,8 +5,13 @@ import java.util.Scanner;
 public class Input {
     private Scanner scanner;
 
-    public String getString(String input) {
+    public String getString() {
         System.out.println("Please enter a string:");
+        String userInput = scanner.nextLine();
+        return userInput;
+    }
+    public String getString(String prompt){
+        System.out.println(prompt);
         String userInput = scanner.nextLine();
         return userInput;
     }
@@ -26,58 +31,54 @@ public class Input {
         return answer.equalsIgnoreCase("y") || answer.equalsIgnoreCase("yes");
     }
 
-    public int getInt(String prompt) {
-        System.out.println(prompt);
-        int userInput = scanner.nextInt();
+    public int getInt(String input) {
+
+        int userInput = Integer.valueOf(getString("enter an integer please "));
+
         return userInput;
     }
 
-    // when you call getint in the test class you give it a prompt already, so itll print it out and change out the prompt phrase
-    public int getInt(int min, int max) {
-        return getInt(min, max, "Enter a number between ");
-    }
+        public int getInt(int min, int max){
+            int input = scanner.nextInt();
 
-    public int getInt(int min, int max, String prompt) {
-        System.out.println(prompt);
-//        System.out.println("Enter a number between " + min + " and " + max);
-        int input = scanner.nextInt();
-        if (input <= min || input >= max) {
-            return getInt(min, max);
+            if (input <= min || input >= max) {
+                return getInt(min, max);
+            }
+            return input;
         }
-        return input;
-    }
 
-    //    int getInt(){
+        //    int getInt(){
 //        return getInt(1,10);
 //    }
-    public double getDouble(String prompt) {
-        double userInput = scanner.nextDouble();
-        return userInput;
-    }
-
-    // double means decimal
-    public double getDouble(double min, double max) {
-        double userInput = scanner.nextDouble();
-        // If userInput is within the min and max, return the input
-        if (userInput > min && userInput < max) {
+        public double getDouble (String prompt){
+            double userInput = scanner.nextDouble();
             return userInput;
         }
-        // Otherwise, call getInt again to prompt the user for a new input
-        return getDouble(min, max);
-    }
+
+        // double means decimal
+        public double getDouble (double min, double max){
+            double userInput = scanner.nextDouble();
+            // If userInput is within the min and max, return the input
+            if (userInput > min && userInput < max) {
+                return userInput;
+            }
+            // Otherwise, call getInt again to prompt the user for a new input
+            return getDouble(min, max);
+        }
 
 
-    //Allow all of your methods for getting input to accept an optional String parameter named prompt.
-    // If passed, the method should show the given prompt to the user before parsing the input.
-    //
+        //Allow all of your methods for getting input to accept an optional String parameter named prompt.
+        // If passed, the method should show the given prompt to the user before parsing the input.
+        //
 
 
-    // When an instance of this object is created, the scanner property should be set to a new instance of the Scanner class.
+        // When an instance of this object is created, the scanner property should be set to a new instance of the Scanner class.
     public Input() {
-        this.scanner = new Scanner(System.in);
+            this.scanner = new Scanner(System.in);
+        }
+
     }
 
-}
 
 /*
 boolean yesNo()
@@ -85,3 +86,20 @@ int getInt(int min, int max)
 int getInt()
 double getDouble(double min, double max)
 double getDouble()*/
+
+
+/*
+Improve your Input class.
+
+Your getInt and getDouble methods should make sure that the value returned from the method is actually an int or a double.
+You can do this by replacing the use of the Scanner nextInt() and nextDouble() methods with the existing getString() method you created in a previous exercise
+  using the following methods to convert the returned String into the desired datatype:
+
+
+Integer.valueOf(String s);
+getString(Integer.valueOf(String s)
+Double.valueOf(String s);
+getString(Integer.valueOf(String s)
+Note these methods will throw a NumberFormatException if the given input cannot be parsed as an int or double.
+Your methods on the Input class should handle these exceptions, you can use a try-catch for this.
+ */

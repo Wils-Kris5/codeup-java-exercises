@@ -2,7 +2,7 @@ package util;
 public class InputTest {
     public static void main(String[] args) {
         Input input = new util.Input();
-        input.getString( "enter a string: ");
+        input.getString();
         input.yesNo("enter yes or no: ");
         input.getInt("enter an integer");
         input.getInt(1, 10);
