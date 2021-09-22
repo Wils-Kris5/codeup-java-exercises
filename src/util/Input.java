@@ -22,7 +22,8 @@ public class Input {
 //        return input.equalsIgnoreCase("y") || input.equalsIgnoreCase("yes");
 
     }
-
+ //Integer.valueOf(String s);
+ //Double.valueOf(String s);
     //Bonus
     public boolean yesNo(String prompt) {
 //        System.out.println("Do you agree?");
@@ -31,11 +32,11 @@ public class Input {
         return answer.equalsIgnoreCase("y") || answer.equalsIgnoreCase("yes");
     }
 
-    public int getInt(String input) {
+    public void getInt(String input) {
 
-        int userInput = Integer.valueOf(getString("enter an integer please "));
+         Integer.parseInt(getString("enter an integer please "));
 
-        return userInput;
+
     }
 
         public int getInt(int min, int max){
@@ -49,10 +50,10 @@ public class Input {
 
         //    int getInt(){
 //        return getInt(1,10);
-//    }
-        public double getDouble (String prompt){
-            double userInput = scanner.nextDouble();
-            return userInput;
+
+        public void getDouble(String input){
+          Double.valueOf(getString("enter a double"));
+
         }
 
         // double means decimal
