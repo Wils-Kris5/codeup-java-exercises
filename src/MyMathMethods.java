@@ -24,7 +24,7 @@ public class MyMathMethods {
 
     // write a pub stat method that works with both ints and doubles (method overloading) and returns the result of dividing the two passed bumbers.
     // write a pub stat method named sum that takes in an array of int numbers( not a list) and returns the sum of those numbers
-    //// 4. Create a class called Movie. The class should define two instance variables of type String named name and director. Add a constructor that takes two strings and sets the name and director properties based on the passed arguments. Make it so the instance variables are not accessible from outside the Movie class. Write getters and setters for the instance variables.
+    //// 4. Create a class called warmUps.Movie. The class should define two instance variables of type String named name and director. Add a constructor that takes two strings and sets the name and director properties based on the passed arguments. Make it so the instance variables are not accessible from outside the warmUps.Movie class. Write getters and setters for the instance variables.
     //
     //    // Bonus: if the passed name or director arguments are null or empty, the constructor should throw an IllegalArgumentException
     public static int quotient(int num1, int num2) {

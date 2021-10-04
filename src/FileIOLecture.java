@@ -1,9 +1,7 @@
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class FileIOLecture {
@@ -15,15 +13,15 @@ public class FileIOLecture {
             ioe.printStackTrace();
         }
         for(String line : linesInTheFile){
-            System.out.println();
+            System.out.println(line);
         }
     }
-    public static void main(String[] args) {
-        Path path = Paths.get("src");
+   // public static void main(String[] args) {
+      //  Path path = Paths.get("src");
 //        System.out.println(path);
 //        System.out.println(path.toAbsolutePath());
-     Path pathToThisLectureFile = Paths.get("src", "fileIOLecture.java");
-        Path pathToOurDataDir = Paths.get("src/data");
+ //    Path pathToThisLectureFile = Paths.get("src", "fileIOLecture.java");
+ //       Path pathToOurDataDir = Paths.get("src/data");
 //      try{
 //          if(Files.notExists(pathToOurDataDir)) {
 //              Files.createDirectories(pathToOurDataDir);
@@ -32,7 +30,7 @@ public class FileIOLecture {
 //          } catch(IOException ioe)) {
 //              ioe.printStackTrace();
 //          }
-         Path pathToOurFile = Paths.get("src/data", "list.txt");
+       //  Path pathToOurFile = Paths.get("src/data", "list.txt");
 //        try{
 //            if(Files.notExists(pathToOurFile)){
 //                Files.createFile(pathToOurFile);
@@ -43,25 +41,25 @@ public class FileIOLecture {
 //            System.out.println("There is a problem!");
 //                ioe.printStackTrace();
 //            }
-        List<String> cartoons = Arrays.asList("Ed, Edd, Eddy" , "PowderPuff Girls", "SpongeBob");
-        try {
-            Files.write(pathToOurFile, cartoons);
-        } catch(IOException ioe){
-            ioe.printStackTrace();
-      }
-        List<String> currentList = new ArrayList<>();
-        try {
-            currentList = Files.readAllLines(pathToOurFile);
-        } catch(IOException ioe){
-            ioe.printStackTrace();
-        } for(String item : currentList){
-            System.out.println(item);
-        }
-    }
+//        List<String> cartoons = Arrays.asList("Ed, Edd, Eddy" , "PowderPuff Girls", "SpongeBob");
+//        try {
+//            Files.write(pathToOurFile, cartoons);
+//        } catch(IOException ioe){
+//            ioe.printStackTrace();
+//      }
+//        List<String> currentList = new ArrayList<>();
+//        try {
+//            currentList = Files.readAllLines(pathToOurFile);
+//        } catch(IOException ioe){
+//            ioe.printStackTrace();
+//        } for(String item : currentList){
+//            System.out.println(item);
+//        }
+//    }
  //a file is a discrete container for data on a storage device
     //a path is the location of a file in a filesystem
 
-
+     // checked exception = will not compile they will not work outside of the try catch 
     //Cross Platform Paths
     //
     //file paths as they relate to Unix/Linux operating systems.

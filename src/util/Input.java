@@ -78,7 +78,10 @@ public class Input {
             this.scanner = new Scanner(System.in);
         }
 
+    public int getInt() {
+        return 0;
     }
+}
 
 
 /*
