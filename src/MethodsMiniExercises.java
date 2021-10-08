@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MethodsMiniExercises {
+public class MethodsExercises {
     // TODO: break the following code apart into a few methods
 //    public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);
@@ -47,5 +47,13 @@ public class MethodsMiniExercises {
 
     public static boolean matches(int len, int num) {
         return len == num;
+    }
+
+    public static int getInteger(int i, int i1) {
+        return getInteger();
+
+    }
+
+    private static int getInteger() {
     }
 }
