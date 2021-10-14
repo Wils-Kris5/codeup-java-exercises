@@ -19,7 +19,7 @@ public class JavaDrills {
         return new String(chars);
 
     }
-//working progress
+//working progress  https://stackoverflow.com/questions/1729778/how-can-i-invert-the-case-of-a-string-in-java
     public static void main(String[] args) {
         sout flipOuterCase("Cat");
     }
