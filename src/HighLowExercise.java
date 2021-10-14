@@ -22,24 +22,25 @@ public class HighLowExercise {
      return keepGuessing;
  }
 
-    public static void gamePromt(int randoNum){
+    public static void gamePromt(int randoNum) {
         System.out.println("guess a number between one and onehundred");
-       int userGuess =  MethodsExercises.getInteger(1, 100);
+        int userGuess = MethodsExercises.getInteger(1, 100);
         if (gameResponseMessage(userGuess, randoNum)) {
             gamePromt(randoNum);
         }
+    }
         public static void start() {
-            System.out.println("Welcome to the High / Low Game!");
-            int randomNum = MethodsExercises.getRandomInt(1, 100);
-            System.out.println(randomNum); // FOR DEBUGGING
-            runGuesses(randomNum);
+            System.out.println("Lets play, Hight-Low Game!");
+            int oneToOneHundred = MethodsExercises.getRandomInt(1, 100);
+            System.out.println(oneToOneHundred); // FOR DEBUGGING
+            gamePromt(oneToOneHundred);
         }
 
         public static void main(String[] args) {
-
+             start();
         }
 
     }
 
 
-}
+

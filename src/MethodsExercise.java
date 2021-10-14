@@ -1,12 +1,9 @@
 
 import java.util.Scanner;
 
-public class MethodsExercise {
+class MethodsMiniExercise {
 
-    public static void main(String[] args) {
-        System.out.println(getInteger(1, 10));
-    }
-
+ 
 
     public static int addInts(int min, int max) {
         return min + max;
@@ -24,6 +21,13 @@ public class MethodsExercise {
         return min % max;
     }
 
+    public static double modulus(double num1, double num2) {
+        return num1 % num2;
+    }
+    public static long factorial(int num) {
+        if (num == 1) return 1;
+        return factorial(num - 1) * num;
+    }
     public static int getInteger(int min, int max) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a number between 1 and 10");
@@ -38,11 +42,67 @@ public class MethodsExercise {
         System.out.println("hey good for you");
         return userInput;
     }
-
+    public static int getRandomInt(int min, int max) {
+        return min + (int)(Math.random() * ((max - min) + 1));
+    }
+    public static void promptFactorials() {
+        Scanner sc = new Scanner(System.in);
+        String continueMessage;
+        System.out.println("Welcome to the factorial calculator!!!");
+        do {
+            System.out.println("What number should we calculate?");
+            int userInt = getInteger(1, 10);
+            System.out.println("The factorial of " + userInt + " is " + factorial(userInt) + ".");
+            System.out.println("Would you like to enter another number? (Enter 'yes' or 'no')");
+            continueMessage = sc.nextLine();
+        } while (continueMessage.equalsIgnoreCase("yes"));
+    }
     private static int inputRange(int min, int max) {
         return min - max;
     }
+
+    public static void diceRoll() {
+        System.out.println("Welcome to Dice Roll!");
+        System.out.println("Enter number of sides of the dice. (1-6)");
+        int noOfSidesOfDice = getInteger(1, 6);
+        System.out.printf("You have rolled %d and a %d",
+                getRandomInt(1, noOfSidesOfDice),
+                getRandomInt(1, noOfSidesOfDice));
+    }
     
+    public static void main(String[] args) {
+
+        // diceRoll();
+
+        // System.out.println();
+
+        // System.out.println(add(2, 2)); // 4
+        // System.out.println(add(2.5, 2.5)); // 5
+        //
+        // System.out.println(subtract(10, 5)); // 5
+        // System.out.println(subtract(8, 3)); // 5
+
+        // System.out.println(multiply(2, 3)); // 6
+        // System.out.println(multiply(3, 4)); // 12
+
+        // System.out.println(divide(10, 2)); // 5
+        // System.out.println(divide(12, 3)); // 4
+
+        // System.out.println(modulus(10, 3)); // 1
+        // System.out.println(modulus(11, 8)); // 3
+
+        // System.out.print("Enter a number between 1 and 10: ");
+        // int userInput = getInteger(1, 10);
+        //
+        // System.out.println("You entered: " + userInput);
+
+        // System.out.println(factorial(1)); // 1
+        // System.out.println(factorial(2)); // 2
+        // System.out.println(factorial(3)); // 6
+        // System.out.println(factorial(4)); // 24
+
+        // promptUserForFactorials();
+    }
 }
  /*#1Create four separate methods. Each will perform an arithmetic operation:
 

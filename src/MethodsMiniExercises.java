@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MethodsExercises {
+public class MethodsMiniExercises {
     // TODO: break the following code apart into a few methods
 //    public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);
@@ -16,11 +16,33 @@ public class MethodsExercises {
 //    }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        System.out.println(getDifference(7, 5));
+        System.out.println(getDifference(5, 7));
+        System.out.println(10);
+        System.out.println(getDifference(1.5, 3));
+        System.out.println(getDifference(2.5, 1.5));
+        System.out.println(getDifference(8.2));
+
+
+    Scanner sc = new Scanner(System.in);
         String stringInput = getInput("Please enter an input.", sc);
         int intInput = getNum("Please enter an integer.", sc);
         boolean numsMatch = matches(stringInput.length(), intInput);
         print(getMessage(numsMatch));
+    }
+    public static int getDifference(int num1, int num2) {
+        if (num1 > num2) return num1 - num2;
+        return num2 - num1;
+    }
+    public static int getDifference(int num) {
+        return getDifference(num, 0);
+    }
+    public static double getDifference(double num1, double num2) {
+        if (num1 > num2) return num1 - num2;
+        return num2 - num1;
+    }
+    public static double getDifference(double num) {
+        return getDifference(num, 0);
     }
 
     public static int getNum(String message, Scanner sc) {
@@ -49,11 +71,5 @@ public class MethodsExercises {
         return len == num;
     }
 
-    public static int getInteger(int i, int i1) {
-        return getInteger();
-
-    }
-
-    private static int getInteger() {
-    }
+   
 }

@@ -11,11 +11,11 @@ public class ControlFLowExercises {
         //Create a while loop that runs so long as i is less than or equal to 15
         //Each loop iteration, output the current value of i, then increment i by one.
 //1
-//        int i = 5;
-//        while(i <= 15){
-//            System.out.printf("%s%s",i, " ");
-//            i++;
-//        }
+        int i = 5;
+        while(i <= 15){
+            System.out.printf("%s%s",i, " ");
+            i++;
+        }
 
         //Your output should look like this:
         //
@@ -67,7 +67,7 @@ public class ControlFLowExercises {
 //            System.out.println(i);
 //        }
 
-//for-c
+////for-c
 //        long i;
 //        for(i = 1; i <= 1000; i++){
 //            System.out.println(i*i);
@@ -84,21 +84,21 @@ public class ControlFLowExercises {
         //For numbers which are multiples of both three and five: print “FizzBuzz”.
 
 
-        int i = 1;
-        while(i <= 100){
-          if(i % 3 == 0 && i % 5 == 0){
-                System.out.println("FizzBuzz");
-            } else if(i % 3 == 0){
-              System.out.println("Fizz");
-          } else if(i % 5 == 0) {
-            System.out.println("Buzz");
-        }  else {
-              System.out.println(i);
-          }
-          i++;
-   }
-
-       
+//        int i = 1;
+//        while(i <= 100){
+//          if(i % 3 == 0 && i % 5 == 0){
+//                System.out.println("FizzBuzz");
+//            } else if(i % 3 == 0){
+//              System.out.println("Fizz");
+//          } else if(i % 5 == 0) {
+//            System.out.println("Buzz");
+//        }  else {
+//              System.out.println(i);
+//          }
+//          i++;
+//   }
+//
+//
         //Display a table of powers.
         //
         //Prompt the user to enter an integer.

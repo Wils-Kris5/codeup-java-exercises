@@ -15,8 +15,10 @@ public class Input {
         String userInput = scanner.nextLine();
         return userInput;
     }
-
+  
     public boolean yesNo() {
+        System.out.println("Do you agree?");
+        String answer = scanner.next();
         return yesNo("enter yes or no: ");
 
 //        return input.equalsIgnoreCase("y") || input.equalsIgnoreCase("yes");
@@ -35,7 +37,7 @@ public class Input {
     public void getInt(String input) {
 
          Integer.parseInt(getString("enter an integer please "));
-
+       
 
     }
 
@@ -79,7 +81,9 @@ public class Input {
         }
 
     public int getInt() {
-        return 0;
+        System.out.println("Enter an integer:");
+        int userInput = scanner.nextInt();
+        return userInput;
     }
 }
 
